@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SomniTune — find the sleep sound that works for you</title>
+<meta name="description" content="SomniTune plays sleep sounds and measures which one actually gets you to sleep fastest — using your Apple Watch, Oura or Whoop, or just your iPhone.">
+<link rel="canonical" href="https://quicksmartgames.github.io/somnitune/">
+<meta name="theme-color" content="#0d0f21" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SomniTune">
+<meta property="og:title" content="SomniTune — find the sleep sound that works for you">
+<meta property="og:description" content="SomniTune plays sleep sounds and measures which one actually gets you to sleep fastest — using your Apple Watch, Oura or Whoop, or just your iPhone.">
+<meta property="og:url" content="https://quicksmartgames.github.io/somnitune/">
+<meta property="og:image" content="https://quicksmartgames.github.io/somnitune/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SomniTune — find the sleep sound that works for you">
+<meta name="twitter:description" content="SomniTune plays sleep sounds and measures which one actually gets you to sleep fastest — using your Apple Watch, Oura or Whoop, or just your iPhone.">
+<meta name="twitter:image" content="https://quicksmartgames.github.io/somnitune/img/og.jpg">
+<style>:root{--bg:#ffffff;--bg-soft:#f6f6f9;--fg:#16161d;--fg-soft:#4c4c5a;--fg-mute:#70707f;--line:#e3e3ea;--accent:#5b4bc4;--accent-soft:#efecfb;--card:#fbfbfd;color-scheme:light dark}@media (prefers-color-scheme:dark){:root{--bg:#0d0f21;--bg-soft:#141730;--fg:#eceef8;--fg-soft:#b6bad3;--fg-mute:#8c93b8;--line:#242845;--accent:#a99bf0;--accent-soft:#1b1e3c;--card:#141730}}*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-feature-settings:"kern";text-rendering:optimizeLegibility}.wrap{max-width:44rem;margin:0 auto;padding:0 1.25rem}a{color:var(--accent);text-underline-offset:2px}a:hover{text-decoration:none}header.site{border-bottom:1px solid var(--line);padding:1rem 0}header.site .wrap{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}header.site img{width:28px;height:28px;border-radius:7px;display:block}header.site .name{font-weight:640;letter-spacing:-.01em;color:var(--fg);text-decoration:none}header.site nav{margin-left:auto;display:flex;gap:1.1rem;font-size:.9rem}header.site nav a{color:var(--fg-soft);text-decoration:none}header.site nav a:hover{color:var(--accent)}main{padding:2.5rem 0 1rem}h1{font-size:2.05rem;line-height:1.18;letter-spacing:-.025em;margin:0 0 .6rem;font-weight:700}h2{font-size:1.32rem;line-height:1.3;letter-spacing:-.015em;margin:2.6rem 0 .7rem;font-weight:660}h3{font-size:1.06rem;margin:1.8rem 0 .4rem;font-weight:640}p{margin:0 0 1.05rem}.lede{font-size:1.14rem;color:var(--fg-soft);margin-bottom:1.6rem}.meta{font-size:.85rem;color:var(--fg-mute);margin:0 0 2rem}ul,ol{margin:0 0 1.05rem;padding-left:1.25rem}li{margin:.35rem 0}blockquote{margin:1.4rem 0;padding:.1rem 0 .1rem 1.1rem;border-left:3px solid var(--accent);color:var(--fg-soft)}.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;margin:1.6rem 0}.box p:last-child,.box ul:last-child{margin-bottom:0}.box h3{margin-top:0}.kicker{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:var(--fg-mute);font-weight:640;margin:0 0 .4rem}.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:.72rem 1.35rem;border-radius:999px;font-size:1rem;line-height:1.3}@media (prefers-color-scheme:dark){.btn{color:#12142c}}.btn:hover{opacity:.9}.btn-row{display:flex;gap:.9rem;align-items:center;flex-wrap:wrap;margin:1.5rem 0}.btn-row .note{font-size:.88rem;color:var(--fg-mute)}.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin:1.8rem 0}.shots figure{margin:0}.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);display:block;background:var(--bg-soft)}.shots figcaption{font-size:.82rem;color:var(--fg-mute);margin-top:.5rem;line-height:1.45}table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.94rem}th,td{text-align:left;padding:.6rem .5rem;border-bottom:1px solid var(--line);vertical-align:top}th{font-weight:640;color:var(--fg-soft);font-size:.83rem;letter-spacing:.03em;text-transform:uppercase}.refs{font-size:.88rem;color:var(--fg-soft)}.refs ol{padding-left:1.4rem}.refs li{margin:.5rem 0}.readnext{margin:2.8rem 0 0}.readnext a{display:block;padding:.85rem 0;border-top:1px solid var(--line);text-decoration:none;color:var(--fg)}.readnext a:last-child{border-bottom:1px solid var(--line)}.readnext .t{font-weight:620;color:var(--accent)}.readnext .d{font-size:.9rem;color:var(--fg-mute)}footer.site{border-top:1px solid var(--line);margin-top:3.5rem;padding:1.8rem 0 3rem;font-size:.88rem;color:var(--fg-mute)}footer.site a{color:var(--fg-soft)}footer.site p{margin:0 0 .5rem}@media (max-width:480px){h1{font-size:1.72rem}body{font-size:16.5px}.shots{grid-template-columns:repeat(2,1fr)}}</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <img src="img/icon-56.png" width="28" height="28" alt="" loading="lazy">
+    <a class="name" href="/somnitune/">SomniTune</a>
+    <nav>
+      <a href="/somnitune/brown-noise/">Brown noise</a>
+      <a href="/somnitune/best-sleep-sound/">Best sound</a>
+      <a href="/somnitune/sleep-tracking-without-a-wearable/">Tracking</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<h1>Which sleep sound actually helps <em>you</em> fall asleep faster?</h1>
+<p class="lede">Plenty of apps will play you rain, brown noise or a fan. None of them tell you whether it worked. SomniTune records which sound played at bedtime, reads the night that followed, and puts the two side by side — night after night, until an answer shows up.</p>
+
+<div class="btn-row">
+  <a class="btn" href="https://apps.apple.com/us/app/somnitune/id6812297009">Download on the App Store</a>
+  <span class="note">Free. iPhone. SomniTune Pro from €4.99/month.</span>
+</div>
+
+<h2>The part other sleep-sound apps skip</h2>
+<p>A sleep-sound app is easy to build and easy to judge on the wrong thing: how big the library is, how nice the loops sound. But the only question that matters at 11pm is whether tonight's choice will get you under faster than last night's did — and the honest answer is that nobody can tell you in advance. The published research on sound and sleep is thin, and where it exists it describes group averages that may point the opposite way for you. <a href="/somnitune/brown-noise/">We go through that evidence in detail</a>, and it is not flattering to the category.</p>
+<p>So SomniTune treats it as a measurement problem instead of a marketing one. Every night you start a sound, the app logs what played and for how long. Every morning it pulls in the night — from whatever actually measured it — and files the two together. After enough nights it can compare sound to sound on your own data: how long you took to fall asleep, how much you slept, how broken the night was.</p>
+<p>It is a slow answer. That is the nature of the question: one night tells you nothing, twenty nights start to mean something. What SomniTune does is make sure those twenty nights get recorded instead of forgotten.</p>
+
+<h2>Two ways it reads the night</h2>
+<h3>With a wearable</h3>
+<p>If you already sleep in an Apple Watch, an Oura ring, a Whoop band, a Withings mat or anything else that writes to Apple Health, SomniTune reads the night from Health and uses it as-is. It does not try to second-guess your device. This is the accurate path, and if you have the hardware it is the one to use.</p>
+
+<h3>Without one</h3>
+<p>Most people don't sleep in a watch. So SomniTune can estimate the night from the iPhone on your nightstand: how still it lay overnight, whether it was picked up (which is what separates scrolling in bed from sleeping), and — if you allow it — what the room sounded like, analysed on the device into a breathing estimate, snoring, and whether someone was talking or the TV was on. Audio is never recorded, saved or uploaded; only the measurements survive the night.</p>
+
+<div class="box">
+  <p class="kicker">What it will not claim</p>
+  <p>A phone on a nightstand cannot tell deep sleep from REM. Nothing without electrodes or a good wrist sensor can. Plenty of apps print a four-colour stage chart from a phone microphone anyway — SomniTune does not. On the phone-only path you get bedtime, wake time, an estimate of how long you took to fall asleep, and how disturbed the night was. Stages appear only when a real wearable supplied them. <a href="/somnitune/sleep-tracking-without-a-wearable/">Here is what a phone can and can't measure, with the validation studies.</a></p>
+</div>
+
+<h2>What it looks like</h2>
+<div class="shots">
+  <figure>
+    <img src="img/01-tonight.webp" srcset="img/01-tonight.webp 420w, img/01-tonight@2x.webp 840w" sizes="(max-width:480px) 45vw, 200px" width="420" height="913" alt="SomniTune's Wind down screen with sound categories and a sleep timer" loading="lazy" decoding="async">
+    <figcaption>Pick a sound and a timer. The app notes what you chose.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/02-recap.webp" srcset="img/02-recap.webp 420w, img/02-recap@2x.webp 840w" sizes="(max-width:480px) 45vw, 200px" width="420" height="913" alt="The Recap screen showing total sleep, efficiency and sleep onset for a night, labelled with the sound that played" loading="lazy" decoding="async">
+    <figcaption>Each morning's recap, tagged with the sound that played.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/03-insights.webp" srcset="img/03-insights.webp 420w, img/03-insights@2x.webp 840w" sizes="(max-width:480px) 45vw, 200px" width="420" height="913" alt="The Insights screen comparing sleep onset by sound across seven nights" loading="lazy" decoding="async">
+    <figcaption>Sleep onset by sound, once there are enough nights to compare.</figcaption>
+  </figure>
+  <figure>
+    <img src="img/04-me.webp" srcset="img/04-me.webp 420w, img/04-me@2x.webp 840w" sizes="(max-width:480px) 45vw, 200px" width="420" height="913" alt="Settings screen explaining how the iPhone-only estimate works and what it cannot do" loading="lazy" decoding="async">
+    <figcaption>The settings screen spells out the limits, not just the features.</figcaption>
+  </figure>
+</div>
+
+<h2>Read before you download</h2>
+<p>These three pages exist because the honest answers to the obvious questions are more interesting than the marketing ones. They are worth reading even if you never install anything.</p>
+
+<div class="readnext">
+  <a href="/somnitune/brown-noise/">
+    <span class="t">Does brown noise actually help you sleep?</span><br>
+    <span class="d">62 million TikTok views, zero randomised trials. What the white- and pink-noise research really shows, including the 2026 study where pink noise cost people REM sleep.</span>
+  </a>
+  <a href="/somnitune/best-sleep-sound/">
+    <span class="t">Which sleep sound works best for you — and how to find out</span><br>
+    <span class="d">Fans, rain, brown noise, music. One category has clearly better evidence than the rest, and it isn't the popular one. Plus how to run the test on yourself.</span>
+  </a>
+  <a href="/somnitune/sleep-tracking-without-a-wearable/">
+    <span class="t">Can an app really measure your sleep without a watch?</span><br>
+    <span class="d">Partly. Here is what wrist and phone validation studies found, including the number that should make you sceptical of every sleep app, this one included.</span>
+  </a>
+</div>
+
+<h2>Free and Pro</h2>
+<p>SomniTune is free: the full sound library's core set, the sleep timer, and tonight's recap. <strong>SomniTune Pro</strong> unlocks the whole library, the per-sound comparison across nights and the long-run insights — the part that actually answers the question. It is <strong>€4.99 per month or €39.99 per year</strong>, with a <strong>7-day free trial</strong>, and it cancels in two taps in the App Store like any other subscription.</p>
+<p>There are no ads. Your sleep data is not sold, shared or uploaded; it is processed on your iPhone. The <a href="https://somnitune-backend.somnitune.workers.dev/privacy">privacy policy</a> is short and says exactly that.</p>
+
+<div class="btn-row">
+  <a class="btn" href="https://apps.apple.com/us/app/somnitune/id6812297009">Get SomniTune on the App Store</a>
+  <span class="note">7-day trial, then €4.99/mo or €39.99/yr.</span>
+</div>
+
+<h2>Questions</h2>
+
+<h3>Do I need an Apple Watch?</h3>
+<p>No. With a watch, ring or sleep mat the numbers are better, because that is real hardware measuring you. Without one, SomniTune estimates the night from iPhone motion and, optionally, on-device sound analysis. The comparison between sounds still works — you are comparing your own nights to each other, measured the same way each time — but treat the absolute minutes as approximate.</p>
+
+<h3>Does it show sleep stages?</h3>
+<p>Only when your wearable provided them through Apple Health. SomniTune will not print deep-sleep and REM figures that came from a phone on a nightstand, because a phone cannot measure them.</p>
+
+<h3>Is the microphone recording me?</h3>
+<p>No audio is recorded, saved or uploaded. The analysis runs on the device and keeps only derived measurements — a breathing-rate estimate, whether snoring occurred, whether there was talking or a TV in the room. The feature is optional and can be left off; motion-only tracking still works.</p>
+
+<h3>How many nights before it tells me anything?</h3>
+<p>Expect a couple of weeks before a comparison is worth reading, and longer if your bedtimes vary a lot. Sleep onset is noisy — a bad day at work moves it further than any sound will. The point of recording every night is to let that noise average out instead of drowning the signal.</p>
+
+<h3>Which sound should I start with?</h3>
+<p>The one you already like. Then change it deliberately, one at a time, and give each a week. <a href="/somnitune/best-sleep-sound/">This page walks through how to set the test up</a> so the result means something.</p>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><a href="https://apps.apple.com/us/app/somnitune/id6812297009">App Store</a> · <a href="mailto:hom_im@icloud.com">Support</a> · <a href="https://somnitune-backend.somnitune.workers.dev/privacy">Privacy</a> · <a href="https://somnitune-backend.somnitune.workers.dev/terms">Terms</a></p>
+    <p>Questions or problems: <a href="mailto:hom_im@icloud.com">hom_im@icloud.com</a>. SomniTune is not a medical device and does not diagnose or treat any condition.</p>
+    <p>© 2026 Igor Khomiakov</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "SomniTune",
+      "url": "https://quicksmartgames.github.io/somnitune/",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "iOS",
+      "description": "Sleep sound player that records which sound played at bedtime and compares it against the night that followed, read from Apple Health or estimated from iPhone motion and on-device sound analysis.",
+      "image": "https://quicksmartgames.github.io/somnitune/img/og.jpg",
+      "screenshot": [
+        "https://quicksmartgames.github.io/somnitune/img/01-tonight.webp",
+        "https://quicksmartgames.github.io/somnitune/img/02-recap.webp",
+        "https://quicksmartgames.github.io/somnitune/img/03-insights.webp"
+      ],
+      "installUrl": "https://apps.apple.com/us/app/somnitune/id6812297009",
+      "downloadUrl": "https://apps.apple.com/us/app/somnitune/id6812297009",
+      "author": { "@type": "Person", "name": "Igor Khomiakov" },
+      "offers": [
+        { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "name": "SomniTune (free)" },
+        { "@type": "Offer", "price": "4.99", "priceCurrency": "EUR", "name": "SomniTune Pro, monthly" },
+        { "@type": "Offer", "price": "39.99", "priceCurrency": "EUR", "name": "SomniTune Pro, yearly" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need an Apple Watch to use SomniTune?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. With a watch, ring or sleep mat the numbers are better, because real hardware is measuring you. Without one, SomniTune estimates the night from iPhone motion and, optionally, on-device sound analysis. The comparison between sounds still works, but treat the absolute minutes as approximate." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does SomniTune show sleep stages?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Only when your wearable provided them through Apple Health. SomniTune will not print deep-sleep and REM figures derived from a phone on a nightstand, because a phone cannot measure them." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the microphone recording me while I sleep?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No audio is recorded, saved or uploaded. The analysis runs on the device and keeps only derived measurements: a breathing-rate estimate, whether snoring occurred, and whether there was talking or a TV in the room. The feature is optional." }
+        },
+        {
+          "@type": "Question",
+          "name": "How many nights before SomniTune can tell me which sound works?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Expect a couple of weeks before a comparison is worth reading, and longer if your bedtimes vary. Sleep onset is noisy, so recording every night lets that noise average out." }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does SomniTune Pro cost?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SomniTune Pro is €4.99 per month or €39.99 per year, with a 7-day free trial. The app itself is free and has no ads." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
