@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quicksmartgames.github.io/sitemap.xml
